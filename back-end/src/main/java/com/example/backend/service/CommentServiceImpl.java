@@ -27,6 +27,11 @@ public class CommentServiceImpl implements CommentService{
     }
 
     @Override
+    public Collection<Comment> getComment() {
+        return commentRepo.findAll();
+    }
+
+    @Override
     public Comment addComment(Comment comment) {
         return commentRepo.save(comment);
     }
@@ -43,9 +48,13 @@ public class CommentServiceImpl implements CommentService{
     }
 
     @Override
-    public void deleteComment(Integer idCmt) {
+    public boolean activeComment(Integer idCmt) {
         Comment cmt = commentRepo.findById(idCmt).orElse(null);
-        if (cmt != null)
-            cmt.setIsActive(false);
+        if (cmt != null) {
+            cmt.setIsActive(!cmt.getIsActive());
+            commentRepo.save(cmt);
+            return true;
+        }
+        return false;
     }
 }

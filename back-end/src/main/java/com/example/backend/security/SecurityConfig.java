@@ -5,6 +5,7 @@ import com.example.backend.filter.CustomAuthorizationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -36,7 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         customAuthenticationFilter.setFilterProcessesUrl("/api/login");
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
         http.authorizeHttpRequests().antMatchers("api/login/**", "api/token/refresh/**", "api/register/**").permitAll();
-//        http.authorizeHttpRequests().antMatchers(HttpMethod.GET, "/api/books", "api/comments", "api/rates").permitAll();
+        http.authorizeHttpRequests().antMatchers(HttpMethod.GET, "/api/books/**", "api/comments/**", "api/rates/**", "/file/**").permitAll();
 //        http.authorizeHttpRequests().antMatchers(HttpMethod.GET, "/api/books", "api/comments", "api/rates").permitAll();
 //        http.authorizeHttpRequests().antMatchers(HttpMethod.GET, "/file/**").permitAll();
 //        http.authorizeHttpRequests().antMatchers(HttpMethod.POST, "/file/**").permitAll();

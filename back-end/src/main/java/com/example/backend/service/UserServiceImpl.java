@@ -18,6 +18,7 @@ import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -66,6 +67,32 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     }
 
     @Override
+    public User updateToManager(int idUser) {
+        User user = userRepo.findById(idUser).orElse(null);
+        Role roleUser = roleRepo.findByName("ROLE_USER");
+        Role roleManager = roleRepo.findByName("ROLE_MANAGER");
+        if (user != null) {
+            user.getRoles().remove(roleUser);
+            user.getRoles().add(roleManager);
+            userRepo.save(user);
+        }
+        return user;
+    }
+
+    @Override
+    public User updateToUser(int idUser) {
+        User user = userRepo.findById(idUser).orElse(null);
+        Role roleUser = roleRepo.findByName("ROLE_USER");
+        Role roleManager = roleRepo.findByName("ROLE_MANAGER");
+        if (user != null) {
+            user.getRoles().remove(roleManager);
+            user.getRoles().add(roleUser);
+            userRepo.save(user);
+        }
+        return user;
+    }
+
+    @Override
     public User getUser(Integer id) {
         return userRepo.findById(id).orElse(null);
     }
@@ -73,7 +100,14 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     @Override
     public List<User> getUsers() {
         log.info("Fetching all users");
-        return userRepo.findAll();
+        Role role = roleRepo.findByName("ROLE_USER");
+        return userRepo.findAll().stream().filter(user -> user.getRoles().contains(role)) .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<User> getEmployee() {
+        Role role = roleRepo.findByName("ROLE_MANAGER");
+        return userRepo.findAll().stream().filter(user -> user.getRoles().contains(role)) .collect(Collectors.toList());
     }
 
     @Override

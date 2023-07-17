@@ -12,7 +12,10 @@ public interface UserService {
     void addRoleToUser(String username, String roleName);
     User getUser(String username);
     User getUserByPhoneNumner(String phoneNumber);
+    User updateToManager(int idUser);
+    User updateToUser(int idUser);
     User getUser(Integer id);
     List<User> getUsers();
+    List<User> getEmployee();
 
 }

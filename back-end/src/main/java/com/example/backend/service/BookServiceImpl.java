@@ -48,9 +48,11 @@ public class BookServiceImpl implements BookService{
     }
 
     @Override
-    public List<Book> search(String keyword) {
-        return null;
+    public List<Book> search(String query) {
+        List<Book> books = bookRepo.searchBooks(query);
+        return books;
     }
+
 
     @Override
     public void deleteBook(Integer id) {
@@ -65,6 +67,16 @@ public class BookServiceImpl implements BookService{
         return null;
     }
 
+    @Override
+    public Book updateAmounBook(Integer idBook, int amount) {
+        Book book = bookRepo.findById(idBook).orElse(null);
+        if (book != null) {
+            book.setAmount(book.getAmount() - amount);
+            book.setSoldAmount(book.getSoldAmount() + amount);
+        }
+        return bookRepo.save(book);
+    }
+
 
     @Override
     public List<Book> getBookByBookTypeDetail(Integer id) {
@@ -72,5 +84,10 @@ public class BookServiceImpl implements BookService{
         if (bookTypeDetail != null)
             return (List<Book>) bookTypeDetail.getBooks();
         return null;
+    }
+
+    @Override
+    public List<Book> getTopBook() {
+        return bookRepo.getTopBooks();
     }
 }

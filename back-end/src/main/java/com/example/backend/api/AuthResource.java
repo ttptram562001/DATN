@@ -5,11 +5,10 @@ import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.example.backend.domain.*;
+import com.example.backend.service.AccountService;
 import com.example.backend.service.CartService;
 import com.example.backend.service.UserService;
-import com.example.backend.service.UserServiceImpl;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,7 +18,6 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -35,7 +33,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 @RestController
 @RequestMapping
 @Slf4j
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin()
 public class AuthResource {
     @Autowired
     private UserService userService;
@@ -47,7 +45,8 @@ public class AuthResource {
     private CartService cartService;
 
     @Autowired
-    private PasswordEncoder passwordEncoderl;
+    private AccountService accountService;
+
 
     @GetMapping("/token/refresh")
     public void refreshToken(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -85,9 +84,10 @@ public class AuthResource {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<?> registerUser(@RequestParam String username,
-                                          @RequestParam String phone,
-                                          @RequestParam String password,
+
+    public ResponseEntity<?> registerUser(@RequestParam(name = "username") String username,
+                                          @RequestParam(name = "password") String password,
+                                          @RequestParam(name = "phone") String phone,
                                           HttpServletRequest request,
                                           HttpServletResponse response) throws IOException {
         if (userService.getUser(username) != null) {
@@ -100,9 +100,10 @@ public class AuthResource {
         Collection<Role> roles = new ArrayList<>();
         Role role = userService.getRoleByName("ROLE_USER");
         roles.add(role);
-        User user = new User(null, username, phone, password, true, roles);
+        User user = new User(null, username, password, phone, true, roles);
         userService.saveUser(user);
         cartService.saveCart(new Cart(null,user, new ArrayList<CartItem>()));
+        accountService.saveAccount(new Account(null, username, phone, user));
         //
         Algorithm algorithm = Algorithm.HMAC256("secret".getBytes());
         String access_token = JWT.create()

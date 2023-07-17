@@ -9,10 +9,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/book-types")
+@CrossOrigin()
 public class BookTypeResource {
     @Autowired
     private BookTypeService bookTypeService;
@@ -28,9 +30,15 @@ public class BookTypeResource {
         return ResponseEntity.ok().body(bookTypeService.getAllBookType());
     }
 
+    @GetMapping("/get-book-type-detail/{id}")
+    public ResponseEntity<Collection<BookTypeDetail>> getBookTypeDetail(@PathVariable(name = "id") Integer id) {
+        return ResponseEntity.ok().body(bookTypeService.getBookTypeDetailById(id));
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<List<Book>> getBooksById(@PathVariable(name = "id") Integer id) {
         return ResponseEntity.ok().body(bookTypeService.getBooksById(id));
     }
+
 
 }

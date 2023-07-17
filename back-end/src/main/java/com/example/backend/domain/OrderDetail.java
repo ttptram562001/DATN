@@ -10,6 +10,8 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 public class OrderDetail {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -17,13 +19,13 @@ public class OrderDetail {
     private int amount;
 
     @ManyToOne
-    @JoinColumn(name = "book_id", nullable = true)
+    @JoinColumn(name = "book_id")
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     private Book book;
 
     @ManyToOne
-    @JoinColumn(name = "order_id", nullable = true)
+    @JoinColumn(name = "order_id")
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     @JsonBackReference

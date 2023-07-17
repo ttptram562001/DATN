@@ -23,21 +23,4 @@ public class BackEndApplication {
     PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-
-//    @Bean
-//    CommandLineRunner run(UserService userService) {
-//        return args -> {
-//            userService.saveRole(new Role(null, "ROLE_USER"));
-//            userService.saveRole(new Role(null, "ROLE_MANAGER"));
-//            userService.saveRole(new Role(null, "ROLE_ADMIN"));
-//
-//            userService.saveUser(new User(null, "phuongtram", "123", "0799463926",true, new ArrayList<>()));
-//            userService.saveUser(new User(null, "hoangdao", "123", "0799463926",true, new ArrayList<>()));
-//            userService.saveUser(new User(null, "nganha", "323", "0799463926",true, new ArrayList<>()));
-//
-//            userService.addRoleToUser("phuongtram", "ROLE_USER");
-//            userService.addRoleToUser("phuongtram", "ROLE_ADMIN");
-//            userService.addRoleToUser("phuongtram", "ROLE_MANAGER");
-//        };
-//    }
 }

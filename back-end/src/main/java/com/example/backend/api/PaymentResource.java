@@ -15,15 +15,16 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api/payment")
+@CrossOrigin()
 public class PaymentResource {
 
     @GetMapping("/create-payment")
-    public ResponseEntity<?> createPayment() throws UnsupportedEncodingException {
+    public ResponseEntity<?> createPayment(@RequestParam(name = "amount") Float amount) throws UnsupportedEncodingException {
 //
 //        String orderType = req.getParameter("ordertype");
-//        long amount = Integer.parseInt(req.getParameter("amount"))*100;
+        long amountt = (long) (amount*100);
 //        String bankCode = req.getParameter("bankCode");
-        long amount = 3000000;
+//        long amount = 3000000;
 
         String vnp_TxnRef = Config.getRandomNumber(8);
 //        String vnp_IpAddr = Config.getIpAddress(req);

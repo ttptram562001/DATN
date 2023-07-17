@@ -1,11 +1,11 @@
 package com.example.backend.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Cleanup;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 
 @Entity
@@ -20,14 +20,18 @@ public class Account {
 
     @Column(name = "phone_number")
     private String phoneNumber;
-
     private String email;
     private Boolean gender;
-    private String address;
     private Date dob;
 
     @OneToOne(mappedBy = "account")
     private User user;
+
+    @OneToMany(mappedBy = "account")
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
+    @JsonManagedReference
+    private Collection<Address> addresses = new ArrayList<>();
 
     public Account(Integer id, String username, String phoneNumber, User user) {
         this.id = id;

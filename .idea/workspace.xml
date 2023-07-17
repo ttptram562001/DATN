@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5681dfc1-59e3-4b89-b42a-7bd853cef2cb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/back-end/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/BackEndApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/BackEndApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/AuthResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/AuthResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/BookResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/BookResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/BookTypeDetailResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/BookTypeDetailResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/BookTypeResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/BookTypeResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/CartResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/CartResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/CommentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/CommentResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/OrderResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/OrderResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/PaymentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/PaymentResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/ProvinceResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/ProvinceResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/RateResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/RateResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/WardResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/api/WardResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/domain/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/domain/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/domain/District.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/domain/District.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/domain/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/domain/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/domain/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/dto/BookDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/dto/BookDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/filter/CustomAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/filter/CustomAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/repository/BookRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/repository/BookRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/repository/OrderDetailRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/repository/OrderDetailRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/repository/OrderRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/repository/OrderRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/repository/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/repository/WardRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/repository/WardRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/OrderDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/OrderDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/OrderDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/OrderDetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/PaymentTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/PaymentTypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/ProvinceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/ProvinceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/ProvinceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/ProvinceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/backend/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end" beforeDir="false" afterPath="$PROJECT_DIR$/front-end" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.1\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2SgFNBNcRRE1uIVytEqJ2At8CAl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5681dfc1-59e3-4b89-b42a-7bd853cef2cb" name="Default Changelist" comment="" />
+      <created>1689560278295</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689560278295</updated>
+      <workItem from="1689560279598" duration="2000" />
+    </task>
+    <servers />
+  </component>
+</project>

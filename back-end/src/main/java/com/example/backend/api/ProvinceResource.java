@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api/provinces")
+@CrossOrigin()
 public class ProvinceResource {
     @Autowired
     private  ProvinceService provinceService;
@@ -28,5 +29,12 @@ public class ProvinceResource {
     @GetMapping("/{code}")
     public ResponseEntity<Province> getProvinceByCode(@PathVariable(name = "code") Integer code) {
         return ResponseEntity.ok().body(provinceService.getByCode(code));
+    }
+
+    @GetMapping("/get-address")
+    public ResponseEntity<String> getAddress(@RequestParam(name = "idProvince") int idProvince,
+                                             @RequestParam(name = "idDistrict") int idDistrict,
+                                             @RequestParam(name = "idWard") int idWard) {
+        return ResponseEntity.ok().body(provinceService.getAddress(idProvince, idDistrict, idWard));
     }
 }

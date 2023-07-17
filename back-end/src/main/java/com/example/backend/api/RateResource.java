@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/rates")
 @RequiredArgsConstructor
 @Slf4j
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin()
 public class RateResource {
     @Autowired
     private  RateService rateService;

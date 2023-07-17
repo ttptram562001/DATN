@@ -29,6 +29,8 @@ public class Book {
     private float price;
     private String description;
     private int amount;
+    @Column(name = "sold_amount")
+    private int soldAmount;
     @Column(name = "is_active")
     private boolean isActive = true;
     @ManyToOne
@@ -60,6 +62,7 @@ public class Book {
         this.price = price;
         this.description = description;
         this.amount = amount;
+        this.soldAmount = 0;
         this.bookTypeDetail = bookTypeDetail;
     }
 

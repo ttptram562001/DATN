@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/wards")
+@CrossOrigin()
 public class WardResource {
     @Autowired
     private WardService wardService;

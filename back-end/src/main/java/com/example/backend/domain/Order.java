@@ -22,29 +22,57 @@ public class Order {
     private Date createdAt;
     @Column(name = "books_price")
     private float booksPrice;
-    @Column(name = "delivery_cost")
-    private float deliveryCost;
     @Column(name = "shipping_address")
     private String shippingAddress;
-    @Column(name = "phone_number")
-    private String phone;
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     @JsonManagedReference
     private Collection<OrderDetail> orderDetails = new ArrayList<>();
-
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     @JsonBackReference
     private User user;
-
     @ManyToOne
     @JoinColumn(name = "payment_type_id", nullable = false)
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     @JsonBackReference
     private PaymentType paymentType;
+
+    @ManyToOne
+    @JoinColumn(name = "order_status_id", nullable = false)
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
+    @JsonBackReference
+    private OrderStatus orderStatus;
+    public Order(Integer id,
+                 float booksPrice,
+                 String shippingAddress,
+                 User user,
+                 PaymentType paymentType) {
+        this.id = id;
+        this.booksPrice = booksPrice;
+        this.shippingAddress = shippingAddress;
+        this.user = user;
+        this.paymentType = paymentType;
+        this.createdAt = new Date();
+    }
+
+    public Order(Integer id,
+                 float booksPrice,
+                 String shippingAddress,
+                 User user,
+                 PaymentType paymentType,
+                 OrderStatus status) {
+        this.id = id;
+        this.booksPrice = booksPrice;
+        this.shippingAddress = shippingAddress;
+        this.user = user;
+        this.paymentType = paymentType;
+        this.createdAt = new Date();
+        this.orderStatus = status;
+    }
 }

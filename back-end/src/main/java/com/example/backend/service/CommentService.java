@@ -7,7 +7,8 @@ import java.util.Collection;
 
 public interface CommentService {
     Collection<Comment> getAllComment(Integer bookId);
+    Collection<Comment> getComment();
     Comment addComment(Comment comment);
     Comment updateComment(String content, Integer idCmt);
-    void deleteComment(Integer idCmt);
+    boolean activeComment(Integer idCmt);
 }
