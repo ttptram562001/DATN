@@ -1,0 +1,44 @@
+.wrapper {
+
+    background-color: #efefef;
+    padding: 20px;
+    height: 500px;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    height: 60px;
+    border-bottom: 1px solid #aaa;
+}
+
+.avatar img {
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.account,
+.order {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.icon-account,
+.icon-order {
+    color:rgb(51, 139, 227);
+    font-size: 20px;
+    margin-right: 6px;
+}
+
+.title-account ,
+.title-order {
+    flex: 1;
+}
+
+.title-account div {
+    line-height: 2.2;
+}
+
+

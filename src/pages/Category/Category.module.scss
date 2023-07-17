@@ -1,0 +1,40 @@
+.wrapper {
+  padding: 20px 0px 26px 8px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.category {
+  width: 20rem;
+  margin-bottom: 20px;
+}
+
+.category span {
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+li {
+  display: block;
+  display: -webkit-box;
+  list-style: none;
+  color: #333;
+  line-height: 36px;
+  -webkit-line-clamp: 1; /* Số dòng bạn muốn giới hạn */
+  visibility: visible; /* Tránh bug không giới hạn số dòng được do trình duyệt */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 20rem;
+  cursor: pointer;
+}

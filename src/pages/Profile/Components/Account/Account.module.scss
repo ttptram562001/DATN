@@ -1,0 +1,59 @@
+.wrapper {
+    padding: 20px;
+
+}
+
+.title-account {
+    border-bottom: 1px solid #aaa;
+    height: 60px;
+}
+
+.title-account div {
+    font-weight: 600;
+}
+
+.title-account span {
+    color: #777;
+}
+
+.info-account {
+    margin-top: 20px;
+}
+
+.username,
+.email,
+.phone,
+.gender,
+.dob,
+.button-save{
+    display: flex;
+    line-height: 3;
+}
+
+.username span,
+.email span,
+.phone span,
+.gender span,
+.dob span{
+    color: #777;
+    width: 300px;
+    text-align: right;
+    margin-right: 16px;
+
+}
+
+.gender-group {
+    display: flex;
+}
+
+// Button Save
+
+.button-save {
+    margin-left: 316px;
+}
+
+.button-save  button {
+    background-color: var(--primary);
+    padding: 0px 26px;
+    color: #fff;
+}

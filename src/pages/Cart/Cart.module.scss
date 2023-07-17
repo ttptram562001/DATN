@@ -1,0 +1,124 @@
+.wrapper {
+  margin-top: 80px;
+}
+
+.container {
+}
+
+.cart-item,
+.cart-item-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 24px;
+}
+
+.des,
+.des-detail {
+  width: 30%;
+}
+
+.quanlity,
+.quanlity-detail {
+  width: 30%;
+}
+
+.remove,
+.remove-detail {
+  width: 20%;
+}
+
+.price,
+.price-detail {
+  width: 20%;
+}
+
+// info bonus
+
+.info-bonus {
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+}
+
+.info-bonus div {
+  border: 1px solid #999;
+  padding: 20px 12px;
+  width: 200px;
+  margin-left: 26px;
+}
+
+.title-discount,
+.title-delivery,
+.title-subtotal,
+.title-total {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+// button
+.btn-cart {
+  margin-top: 30px;
+  float: right;
+}
+
+.btn-checkout {
+  padding: 20px 12px;
+  background-color: var(--primary);
+  color: #fff;
+  width: 180px;
+  font-style: 2rem;
+  cursor: pointer;
+
+  &:hover {
+    font-weight: 600;
+  }
+}
+
+//
+.cart-item-info {
+  padding-top: 24px;
+}
+
+.des-detail img {
+  width: 20%;
+}
+
+.quanlity-detail,
+.remove-detail,
+.price-detail {
+  display: flex;
+  align-items: center;
+}
+
+.minus-icon,
+.add-icon {
+  width: 50px;
+  padding: 10px 0px;
+  color: #fff;
+  cursor: pointer;
+}
+.quanlity-detail div {
+  width: 50px;
+  padding: 6px 0px;
+  text-align: center;
+
+}
+
+.minus-icon {
+    background-color: var(--primary);
+}
+
+.add-icon {
+    background-color: var(--high-color);
+}
+
+.remove-icon {
+    width: 50px;
+    padding: 10px 0px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}

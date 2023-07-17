@@ -1,0 +1,108 @@
+.wrapper {
+    padding: 20px;
+
+}
+
+.title-address {
+    border-bottom: 1px solid #aaa;
+    height: 60px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-address button {
+    background-color: var(--primary);
+    color: #fff;
+    height: 50px;
+    padding: 10px 16px;   
+}
+
+.wrapper span {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+.info-address {
+    margin-top: 20px;
+    color: #777;
+}
+
+.username-phone {
+    display: flex;
+}
+
+.username {
+    font-weight: 600;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+// 
+
+.form-add-address {
+    padding: 20px 10px;
+}
+
+.username-phone-add {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.username-phone-add input {
+    border: 1px solid #aaa;
+    padding: 10px 26px;
+}
+
+.detail-address-add {
+    margin-top: 20px;
+}
+
+.detail-address-add input {
+    border: 1px solid #aaa;
+    padding: 10px 26px;
+    width: 100%;
+}
+
+.address-add {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    padding: 10px 32px;
+    border: none;
+    border: 1px solid #aaa;
+    margin-top: 20px;
+}
+
+.address-type-add {
+    margin-top: 20px;
+}
+
+.address-type-add span {
+    margin-right: 20px;
+}
+
+.address-type-add label {
+    margin-right: 10px;
+}
+
+// address-default
+.address-default {
+    margin-top: 20px;
+}
+
+.address-default input{
+    margin-right: 10px;
+}
+
+// default butotn
+
+.default {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    width: 100px;
+    text-align: center;
+}

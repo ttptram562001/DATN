@@ -1,0 +1,69 @@
+.wrapper {
+  padding: 20px;
+  width: 100%;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.container div {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.active {
+  color: var(--primary);
+}
+
+// content
+
+.order {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.order-detail {
+  display: flex;
+  padding: 10px 16px;
+}
+
+.order-detail-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.price {
+  color: var(--primary);
+}
+
+.amount {
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.total-price {
+  display: flex;
+  justify-content: end;
+  padding: 0px 10px 10px 0px;
+  font-weight: 600;
+}
+
+.total-price span {
+  color: var(--primary);
+  margin-left: 6px;
+}

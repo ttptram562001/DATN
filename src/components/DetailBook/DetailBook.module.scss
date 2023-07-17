@@ -1,0 +1,196 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container {
+  width: 1150px;
+  max-width: 100%;
+  min-height: 1000px;
+  margin-top: var(--default-layout-header-height, 60px);
+  display: flex;
+}
+
+.info {
+  margin-left: 40px;
+}
+
+.book-info-main {
+  line-height: 2;
+  padding-bottom: 24px;
+}
+
+.book-name {
+  font-size: 2.6rem;
+  color: var(--high-color);
+  word-break: break-word;
+  font-weight: 600;
+}
+
+.book-rate {
+  font-size: 1.6rem;
+}
+
+.book-price {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.book-info-bonus {
+  border-top: 1px solid rgba(22, 35, 24, 0.34);
+  padding: 24px 0px;
+}
+
+.icon {
+  margin-right: 8px;
+  color: rgba(22, 35, 24, 0.34);
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.book-btn {
+  border-top: 1px solid rgba(22, 35, 24, 0.34);
+  padding: 24px 0px;
+  display: flex;
+}
+
+.quanlity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  padding: 10px 16px;
+  border: 1px solid #e6e6e6;
+}
+
+.quanlity input {
+  text-align: center;
+  width: 50px;
+}
+
+.btn-add-cart,
+.btn-buy-now {
+  width: 215px;
+  margin-left: 20px;
+  padding: 18px 10px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+.btn-add-cart {
+  background-color: rgba(0, 0, 0, 0.85);
+
+  &:hover {
+    background-color: var(--high-color);
+  }
+}
+
+.btn-buy-now {
+  background-color: var(--high-color);
+  &:hover {
+    background-color: var(--black);
+  }
+}
+
+// Rating
+
+.rate-review {
+  width: 100%;
+  border-top: 1px solid rgba(22, 35, 24, 0.34);
+  padding: 24px 0px;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-style: oblique;
+}
+
+.content-rating-review {
+  display: flex;
+  margin-top: 30px;
+}
+
+.avatar {
+  width: 30%;
+}
+.avatar img ,
+.avatar-of-reviewer img{
+  width: 40px;
+  border-radius: 50%;
+}
+
+.username {
+  font-weight: 600;
+  color: #373737;
+}
+
+.rate-review-res {
+  display: flex;
+  margin: auto;
+}
+
+.rating {
+  text-align: center;
+}
+
+.rating div {
+  font-size: 1.8rem;
+}
+
+.btn-review {
+  margin-left: 40px;
+  padding: 4px 32px;
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 1.8rem;
+}
+
+// All reviews
+
+.all-reviews {
+  width: 100%;
+  border-top: 1px solid rgba(22, 35, 24, 0.34);
+  padding: 24px 0px;
+}
+
+.avatar-of-reviewer {
+  min-width: 30%;
+}
+
+.review {
+  display: flex;
+  margin: 18px 0px;
+}
+
+.review-content {
+  margin-left: 40px;
+  border-bottom: 1px solid rgba(22, 35, 24, 0.34);
+
+}
+
+.datetime {
+  font-style: italic;
+  font-weight: 100;
+  color: #777;
+}
+
+.review-content img,
+.review-content div {
+  margin-top: 12px;
+}
+
+.review-content img {
+  width: 200px;
+}
+
+.content-review {
+  margin-bottom: 30px;
+}

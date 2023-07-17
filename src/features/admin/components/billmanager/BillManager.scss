@@ -1,0 +1,94 @@
+.name-phone {
+  display: flex;
+}
+
+.name-phone div {
+  border: 1px solid #999;
+  padding: 6px 16px;
+  width: 300px;
+  margin-right: 20px;
+  color: #777;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+// address
+
+.address {
+  border: 1px solid #999;
+  padding: 6px 16px;
+  max-width: 620px;
+  margin-top: 10px;
+  color: #777;
+}
+
+// payment-method
+.payment-method {
+  margin-top: 10px;
+  display: flex;
+}
+
+.payment-method span {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+// order status
+.order-status span {
+  font-weight: 600;
+}
+
+.order-status select {
+  padding: 0px;
+  padding: 6px 16px;
+  margin-left: 20px;
+}
+
+// detail-order
+.detail-order {
+  margin-top: 20px;
+}
+.table-detail-order {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-detail-order span {
+  text-align: center;
+}
+
+.title-table span {
+  color: #0a7ab271;
+  font-weight: 600;
+}
+
+.data-row {
+  margin: 6px 0px;
+  border-bottom: 1px solid #e2dbdb;
+  padding: 6px;
+}
+// total-price
+
+.total-price {
+  display: flex;
+  justify-content: right;
+}
+
+.total-price div {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+// notification
+
+.alert-container {
+  font-weight: 600;
+  color: rgb(16, 154, 240);
+  padding: 16px;
+  border-radius: 10px;
+  align-items: center;
+  width: 400px;
+  float: right;
+}

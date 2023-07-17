@@ -1,0 +1,93 @@
+.wrapper {
+  --width-item: 240px;
+  --hight-btn: 40px;
+  width: 240px;
+  margin: 12px 16px;
+  position: relative;
+
+  &:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+}
+
+.img-box {
+  overflow: hidden;
+
+  &:hover section {
+    display: block;
+  }
+}
+
+.book-image {
+  width: 240px;
+}
+
+section {
+  width: var(--width-item);
+  height: var(--hight-btn);
+  background-color: transparent;
+  position: absolute;
+  top: calc(346.5px - 40px);
+  display: none;
+  opacity: slide;
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+.book-btn {
+  position: relative;
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   height: calc(var(--hight-btn) - 8px);
+  //   width: 1px;
+  //   top: 4px;
+  //   right: 120px;
+  //   background-color: var(--white);
+  // }
+}
+
+.cart,
+.view {
+  width: 100px;
+  height: calc(var(--hight-btn) - 12px);
+  background-color: var(--black);
+  color: var(--white);
+  padding: 6px 10px;
+
+  &:hover {
+    background-color: var(--high-color);
+  }
+}
+
+// @keyframes slide {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+.book-info {
+  text-align: center;
+}
+
+.book-author {
+  color: #777;
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+.book-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  &:hover {
+    color: var(--high-color);
+  }
+}
+
+.book-price {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
